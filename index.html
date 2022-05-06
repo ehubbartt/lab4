@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 4</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+
+</head>
+
+<body>
+  <div id="thematic" class="map"></div>
+  <div id="both" class=" map"></div>
+  <div id="themeMap" class=" map"></div>
+  <div id="base" class="map"></div>
+  <div id="default" class="map"></div>
+  <h1 id="title">Default Mapbox Over San Francisco</h1>
+  <div class="description">
+    <p id="default-description">
+      This is a default map layer from mapbox that shows the San Francisco area.
+    </p>
+    <p id="base-description" class="hidden">
+      This is a custom base layer map from mapbox that is styled to highlight water and green areas in the San Francisco
+      area.
+    </p>
+    <p id="thematic-description" class="hidden">
+      This is a custom thematic layer that is shown over the default layer and shows the location of green roofs in the
+      San Francisco area.
+    </p>
+    <p id="both-description" class="hidden">
+      This is a custom thematic layer that is shown over the base layer and shows the location of green roofs in the San
+      Francisco area.
+    </p>
+    <p id="themeMap-description" class="hidden">
+      This is a custom mapbox styled layer that is based on the theme of space. The colors match the colors from the
+      Milkyway galaxy.
+    </p>
+  </div>
+  <form action="" name="mapSelector">
+    <fieldset class="selector">
+      <div>
+        <input type="radio" id="default" name="map-radio" value="default" checked>
+        <label for="default">Default</label>
+      </div>
+      <div>
+        <input type="radio" id="base" name="map-radio" value="base">
+        <label for="base">Base Map</label>
+      </div>
+
+      <div>
+        <input type="radio" id="thematic" name="map-radio" value="thematic">
+        <label for="thematic">Thematic Map</label>
+      </div>
+
+      <div>
+        <input type="radio" id="both" name="map-radio" value="both">
+        <label for="both">Thematic and Base map</label>
+      </div>
+
+      <div>
+        <input type="radio" id="theme" name="map-radio" value="themeMap">
+        <label for="theme">Space Theme Map</label>
+      </div>
+    </fieldset>
+  </form>
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
